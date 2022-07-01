@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content= "width=device-width" initial-scale="1.0">
+		<title>Fundamentos - align content</title>
+		<style>
+			.flex-container{
+				height: 400px;
+				max-width: 300px;
+				border: 1px solid black;
+				display: flex;
+				margin: auto;
+				flex-wrap: wrap;
+			}
+			
+			.item{
+				background-color: blueviolet;
+				padding: 5px;
+				margin: 5px;
+				color: white;
+				text-align: center;
+				flex: 1;
+			}
+			
+			.stretch{
+				align-content: stretch;
+			}
+			
+			.center{
+				align-content: center;
+			}
+			
+			.flex-start{
+				align-content: flex-start;
+			}
+			
+			.flex-end{
+				align-content: flex-end;
+			}
+			
+			.space-between{
+				align-content: space-between;
+			}
+			
+			.space-around{
+				align-content: space-around;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<p>stretch</p>
+		<div class="flex-container stretch">
+			<div class="item">item 1 - Aquilo: 1 interior, recheio, contento, miolo.</div>
+			<div class="item">item 2 - alinhamento dos itens ao centro</div>
+			<div class="item">item 3 - Os dizeres (duma carta)</div>
+			<div class="item">item 4 - Assunto</div>
+			<div class="item">item 5 - a capacidade de algo. Os dizeres (duma carta)</div>
+			<div class="item">item 6 - tópico, ou conjunto de tópicos, abrangido em determinado livro, carta</div>
+			<div class="item">item 7 - relevância</div>
+		</div>
+		
+		<p>center</p>
+		<div class="flex-container center">
+			<div class="item">item 1 - Aquilo que a 1 interior, recheio, contento, miolo.</div>
+			<div class="item">item 2 - alinhamento dos itens ao centro</div>
+			<div class="item">item 3 - Os dizeres (duma carta)</div>
+			<div class="item">item 4 - Assunto</div>
+			<div class="item">item 5 - a capacidade de algo. Os dizeres (duma carta)</div>
+			<div class="item">item 6 - conjunto de tópicos, abrangido em determinado assunto.</div>
+			<div class="item">item 7 - relevância</div>
+		</div>
+		
+		<p>flex-start</p>
+		<div class="flex-container flex-start">
+			<div class="item">item 1 - Aquilo que a 1 interior, recheio, contento, miolo.</div>
+			<div class="item">item 2 - alinhamento dos itens ao centro</div>
+			<div class="item">item 3 - Os dizeres (duma carta)</div>
+			<div class="item">item 4 - Assunto</div>
+			<div class="item">item 5 - a capacidade de algo. Os dizeres (duma carta)</div>
+			<div class="item">item 6 - conjunto de tópicos, abrangido em determinado assunto.</div>
+			<div class="item">item 7 - relevância</div>
+		</div>
+		
+		<p>flex-end</p>
+		<div class="flex-container flex-end">
+			<div class="item">item 1 - Aquilo que a 1 interior, recheio, contento, miolo.</div>
+			<div class="item">item 2 - alinhamento dos itens ao centro</div>
+			<div class="item">item 3 - Os dizeres (duma carta)</div>
+			<div class="item">item 4 - Assunto</div>
+			<div class="item">item 5 - a capacidade de algo. Os dizeres (duma carta)</div>
+			<div class="item">item 6 - conjunto de tópicos, abrangido em determinado assunto.</div>
+			<div class="item">item 7 - relevância</div>
+		</div>
+
+		<p>space-between</p>
+		<div class="flex-container space-between">
+			<div class="item">item 1 - Aquilo que a 1 interior, recheio, contento, miolo.</div>
+			<div class="item">item 2 - alinhamento dos itens ao centro</div>
+			<div class="item">item 3 - Os dizeres (duma carta)</div>
+			<div class="item">item 4 - Assunto</div>
+			<div class="item">item 5 - a capacidade de algo. Os dizeres (duma carta)</div>
+			<div class="item">item 6 - conjunto de tópicos, abrangido em determinado assunto.</div>
+			<div class="item">item 7 - relevância</div>
+		</div>
+		
+		<p>space-around</p>
+		<div class="flex-container space-around">
+			<div class="item">item 1 - Aquilo que a 1 interior, recheio, contento, miolo.</div>
+			<div class="item">item 2 - alinhamento dos itens ao centro</div>
+			<div class="item">item 3 - Os dizeres (duma carta)</div>
+			<div class="item">item 4 - Assunto</div>
+			<div class="item">item 5 - a capacidade de algo. Os dizeres (duma carta)</div>
+			<div class="item">item 6 - conjunto de tópicos, abrangido em determinado assunto.</div>
+			<div class="item">item 7 - relevância</div>
+		</div>
+
+	</body>
+</html>
